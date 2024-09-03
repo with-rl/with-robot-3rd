@@ -116,8 +116,8 @@ class YouBot:
         self.gripper = self.sim.getObject(f"/youBotGripperJoint2")
         # lidar
         self.lidars = []
-        for i in range(1, 14):
-            self.lidars.append(self.sim.getObject(f"/lidar_{i:02d}"))
+        for i in range(13):
+            self.lidars.append(self.sim.getObject(f"/lidar_{i+1:02d}"))
         # camera
         self.camera_1 = self.sim.getObject(f"/camera_1")
 
