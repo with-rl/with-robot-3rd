@@ -6,6 +6,13 @@ pip install pynput
 pip install matplotlib
 ```
 
+# pendulum_1d
+
+## 1. Control by Keyboard [control_by_keyboard.py](./pendulum_1d/control_by_keyboard.py)
+- right arrow: positive force
+- left arrow: negative force
+- q: quit simulator
+![mapping distance and angle](./images/pendulum_1d_control_by_keyboard.gif)
 # youBot
 
 ## 1. Control by Keyboard [control_by_keyboard.py](./youBot/control_by_keyboard.py)
