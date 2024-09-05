@@ -13,6 +13,13 @@ pip install matplotlib
 - left arrow: negative force
 - q: quit simulator
 ![mapping distance and angle](./images/pendulum_1d_control_by_keyboard.gif)
+
+## 2. Forward Kinematics [forward_kinematics.py](./pendulum_1d/forward_kinematics.py)
+- right arrow: positive theta_0
+- left arrow: negative theta_0
+- q: quit simulator
+![mapping distance and angle](./images/pendulum_1d_forward_kinematics.gif)
+
 # youBot
 
 ## 1. Control by Keyboard [control_by_keyboard.py](./youBot/control_by_keyboard.py)
