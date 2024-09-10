@@ -3,6 +3,7 @@
 pip install coppeliasim-zmqremoteapi-client
 pip install numpy
 pip install sympy
+pip install scipy
 pip install pynput
 pip install matplotlib
 ```
@@ -21,6 +22,11 @@ pip install matplotlib
 - q: quit simulator
 ![dh parameters](./images/pendulum_1d_dh_parameters.png)
 ![forward kinematic](./images/pendulum_1d_forward_kinematics.gif)
+
+## 3. Inverse Kinematics [inverse_kinematics.py](./pendulum_1d/inverse_kinematics.py)
+- space: random C1_ref
+- q: quit simulator
+![forward kinematic](./images/pendulum_1d_inverse_kinematics.gif)
 
 # youBot
 
