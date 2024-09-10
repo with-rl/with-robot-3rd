@@ -32,24 +32,17 @@ class FKPendulum(Pendulum1D):
 
     def fk(self):
         theta_b = -np.pi / 2
-        H_B0 = np.array(
-            [
-                [1, 0, 0, 0],
-                [0, np.cos(theta_b), -np.sin(theta_b), 0],
-                [0, np.sin(theta_b), np.cos(theta_b), 1],
-                [0, 0, 0, 1],
-            ]
-        )
+        T_WB = np.array([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 1], [0, 0, 0, 1]])
         theta_0 = self.control.theta_0
-        H_01 = np.array(
+        T_B0 = np.array(
             [
                 [np.cos(theta_0), -np.sin(theta_0), 0, 0],
-                [np.sin(theta_0), np.cos(theta_0), 0, 0],
-                [0, 0, 1, 0],
+                [0, 0, 1, 0.101000000000000],
+                [-np.sin(theta_0), -np.cos(theta_0), 0, 0],
                 [0, 0, 0, 1],
             ]
         )
-        C1_hat = H_B0 @ H_01 @ np.array([-0.45, 0.0, 0.101, 1])
+        C1_hat = T_WB @ T_B0 @ np.array([-0.45, 0.0, 0.0, 1])
         return C1_hat[:-1]
 
     def run_step(self, count):

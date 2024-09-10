@@ -2,6 +2,7 @@
 ```
 pip install coppeliasim-zmqremoteapi-client
 pip install numpy
+pip install sympy
 pip install pynput
 pip install matplotlib
 ```
@@ -18,7 +19,8 @@ pip install matplotlib
 - right arrow: positive theta_0
 - left arrow: negative theta_0
 - q: quit simulator
-![mapping distance and angle](./images/pendulum_1d_forward_kinematics.gif)
+![dh parameters](./images/pendulum_1d_dh_parameters.png)
+![forward kinematic](./images/pendulum_1d_forward_kinematics.gif)
 
 # youBot
 
