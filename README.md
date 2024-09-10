@@ -26,7 +26,12 @@ pip install matplotlib
 ## 3. Inverse Kinematics [inverse_kinematics.py](./pendulum_1d/inverse_kinematics.py)
 - space: random C1_ref
 - q: quit simulator
-![forward kinematic](./images/pendulum_1d_inverse_kinematics.gif)
+![inverse kinematic](./images/pendulum_1d_inverse_kinematics.gif)
+
+## 4. P Control [force_p_control.py](./pendulum_1d/force_p_control.py)
+- space: start control
+- q: quit simulator
+![force p control](./images/pendulum_1d_p_control.gif)
 
 # youBot
 
