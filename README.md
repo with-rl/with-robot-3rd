@@ -38,6 +38,11 @@ pip install matplotlib
 - q: quit simulator
 ![force pd control](./images/pendulum_1d_pd_control.gif)
 
+## 6. PID Control [force_pid_control.py](./pendulum_1d/force_pid_control.py)
+- space: start control
+- q: quit simulator
+![force pd control](./images/pendulum_1d_pid_control.gif)
+
 # youBot
 
 ## 1. Control by Keyboard [control_by_keyboard.py](./youBot/control_by_keyboard.py)
