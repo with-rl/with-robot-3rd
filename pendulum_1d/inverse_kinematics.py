@@ -12,7 +12,7 @@ from pynput.keyboard import Key
 from pendulum_1d import Pendulum1D
 
 
-class FKPendulum(Pendulum1D):
+class IKPendulum(Pendulum1D):
     def init_coppelia(self):
         super().init_coppelia()
         self.sim.setObjectInt32Param(
@@ -94,6 +94,6 @@ class FKPendulum(Pendulum1D):
 
 
 if __name__ == "__main__":
-    client = FKPendulum()
+    client = IKPendulum()
     client.init_coppelia()
     client.run_coppelia()
