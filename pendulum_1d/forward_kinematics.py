@@ -30,14 +30,12 @@ class FKPendulum(Pendulum1D):
         C1 = self.sim.getObjectPosition(self.dummy)
         return np.array(C1)
 
-    def fk(self):
-        theta_b = -np.pi / 2
+    def fk(self, theta_0):
         T_WB = np.array([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 1], [0, 0, 0, 1]])
-        theta_0 = self.control.theta_0
         T_B0 = np.array(
             [
                 [np.cos(theta_0), -np.sin(theta_0), 0, 0],
-                [0, 0, 1, 0.101000000000000],
+                [0, 0, 1, 0.101],
                 [-np.sin(theta_0), -np.cos(theta_0), 0, 0],
                 [0, 0, 0, 1],
             ]
@@ -51,7 +49,7 @@ class FKPendulum(Pendulum1D):
         # read dummy position
         C1 = self.read_dummy()
         # calc fk
-        C1_hat = self.fk()
+        C1_hat = self.fk(self.control.theta_0)
         # display
         self.visualize(C1, C1_hat)
 
