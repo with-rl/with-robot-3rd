@@ -6,7 +6,6 @@
 import collections
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.optimize import fsolve
 from pynput.keyboard import Key
 
 from pendulum_1d import Pendulum1D
