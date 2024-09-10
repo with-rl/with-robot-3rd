@@ -42,17 +42,18 @@ def forward_kinematics():
     alpha_B, a_B, theta_0, d_0 = sy.symbols("alpha_B, a_B, theta_0, d_0", real=True)
 
     print("*" * 10, "forward_kinematics", "*" * 10)
-    T_WB = dh_transformation(alpha_W, a_W, theta_B, d_B)
-    print(f"T_WB: {T_WB}")
-    T_WB = (
-        T_WB.subs([(alpha_W, 0)]).subs([(a_W, 0)]).subs([(theta_B, 0)]).subs([(d_B, 1)])
+    T_SB = dh_transformation(alpha_W, a_W, theta_B, d_B)
+    print(f"T_SB = {T_SB}")
+    T_SB = (
+        T_SB.subs([(alpha_W, 0)]).subs([(a_W, 0)]).subs([(theta_B, 0)]).subs([(d_B, 1)])
     )
-    print(f"T_WB: {T_WB}")
+    print(f"T_SB = {T_SB}")
+    print()
 
     T_B0 = dh_transformation(alpha_B, a_B, theta_0, d_0)
-    print(f"T_B0: {T_B0}")
+    print(f"T_B0 = {T_B0}")
     T_B0 = T_B0.subs([(alpha_B, -sy.pi / 2)]).subs([(a_B, 0)]).subs([(d_0, 0.101)])
-    print(f"T_B0: {T_B0}")
+    print(f"T_B0 = {T_B0}")
 
 
 def main():

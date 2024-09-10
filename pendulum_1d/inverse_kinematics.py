@@ -43,7 +43,7 @@ class IKPendulum(Pendulum1D):
         return np.array(C1)
 
     def fk(self, theta_0):
-        T_WB = np.array([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 1], [0, 0, 0, 1]])
+        T_SB = np.array([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 1], [0, 0, 0, 1]])
         T_B0 = np.array(
             [
                 [np.cos(theta_0), -np.sin(theta_0), 0, 0],
@@ -52,7 +52,7 @@ class IKPendulum(Pendulum1D):
                 [0, 0, 0, 1],
             ]
         )
-        C1_hat = T_WB @ T_B0 @ np.array([-0.45, 0.0, 0.0, 1])
+        C1_hat = T_SB @ T_B0 @ np.array([-0.45, 0.0, 0.0, 1])
         return C1_hat[:-1]
 
     def ik(self, thetas, params):
