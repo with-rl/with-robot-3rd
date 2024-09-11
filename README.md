@@ -43,6 +43,16 @@ pip install matplotlib
 - q: quit simulator
 ![force pd control](./images/pendulum_1d_pid_control.gif)
 
+# pendulum_2d
+
+## 1. Control by Keyboard [control_by_keyboard.py](./pendulum_2d/control_by_keyboard.py)
+- w: joint_0 positive force
+- s: joint_0 negative force
+- e: joint_1 positive force
+- d: joint_1 negative force
+- q: quit simulator
+![mapping distance and angle](./images/pendulum_2d_control_by_keyboard.gif)
+
 # youBot
 
 ## 1. Control by Keyboard [control_by_keyboard.py](./youBot/control_by_keyboard.py)
