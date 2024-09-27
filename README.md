@@ -53,6 +53,15 @@ pip install matplotlib
 - q: quit simulator
 ![mapping distance and angle](./images/pendulum_2d_control_by_keyboard.gif)
 
+## 2. Forward Kinematics [forward_kinematics.py](./pendulum_2d/forward_kinematics.py)
+- w: joint_0 positive theta_0
+- s: joint_0 negative theta_0
+- e: joint_1 positive theta_1
+- d: joint_1 negative theta_1
+- q: quit simulator
+![dh parameters](./images/pendulum_2d_dh_parameters.png)
+![forward kinematic](./images/pendulum_2d_forward_kinematics.gif)
+
 # youBot
 
 ## 1. Control by Keyboard [control_by_keyboard.py](./youBot/control_by_keyboard.py)
