@@ -67,6 +67,11 @@ pip install matplotlib
 - q: quit simulator
 ![inverse kinematic](./images/pendulum_2d_inverse_kinematics.gif)
 
+## 4. PID Control (Joint_0 Only) [force_pid_joint_0_control.py](./pendulum_2d/force_pid_joint_0_control.py)
+- space: start control
+- q: quit simulator
+![force pd control](./images/pendulum_2d_joint_0_pid_control.gif)
+
 # youBot
 
 ## 1. Control by Keyboard [control_by_keyboard.py](./youBot/control_by_keyboard.py)
