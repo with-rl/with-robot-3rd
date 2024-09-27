@@ -62,6 +62,11 @@ pip install matplotlib
 ![dh parameters](./images/pendulum_2d_dh_parameters.png)
 ![forward kinematic](./images/pendulum_2d_forward_kinematics.gif)
 
+## 3. Inverse Kinematics [inverse_kinematics.py](./pendulum_2d/inverse_kinematics.py)
+- space: random C2_ref
+- q: quit simulator
+![inverse kinematic](./images/pendulum_2d_inverse_kinematics.gif)
+
 # youBot
 
 ## 1. Control by Keyboard [control_by_keyboard.py](./youBot/control_by_keyboard.py)
