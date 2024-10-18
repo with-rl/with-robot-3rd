@@ -94,3 +94,9 @@ pip install matplotlib
 - 목표: 100x100 grid 내에서 탐색 가능한 지역을 numpy를 이용해 계산 및 시각화
 - 동작확인:
 ![mapping distance and angle](./images/youbot_mapping_distance_angle.gif)
+
+## 3. kinematic _analysis [kinematics_analysis.ipynb](./youBot/kinematics_analysis.ipynb)
+- 가정: 정확한 자동차 위치와 목표물의 위치를 알고 있음
+- 목표: 로봇팔을 제어하여 목표물을 pick & place
+- 동작확인:
+![mapping distance and angle](./images/youbot_kinematics_analysis.gif)
