@@ -22,7 +22,7 @@ class Control:
     arm_2: float = -np.pi / 4
     arm_3: float = -np.pi / 4
     arm_4: float = 0
-    gripper: float = -0.04
+    gripper: float = -0.05
 
 
 class YouBot:
@@ -94,7 +94,7 @@ class YouBot:
             self.control.gripper += delta
         if key == keyboard.KeyCode.from_char("j"):
             self.control.gripper -= delta
-        self.control.gripper = min(max(self.control.gripper, -0.04), 0.04)
+        self.control.gripper = min(max(self.control.gripper, -0.04), 0.0)
 
         if key == keyboard.KeyCode.from_char("q"):
             self.run_flag = False
@@ -147,7 +147,7 @@ class YouBot:
         self.sim.setJointTargetPosition(self.arms[4], self.control.arm_4)
 
     def control_gripper(self):
-        self.sim.setJointTargetVelocity(self.gripper, self.control.gripper)
+        self.sim.setJointTargetPosition(self.gripper, self.control.gripper)
 
     def read_lidars(self):
         scan = []
