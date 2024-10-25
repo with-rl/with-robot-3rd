@@ -6,6 +6,8 @@ pip install sympy
 pip install scipy
 pip install pynput
 pip install matplotlib
+pip install opencv-python
+pip install webcolors
 ```
 
 # pendulum_1d
@@ -95,8 +97,14 @@ pip install matplotlib
 - 동작확인:
 ![mapping distance and angle](./images/youbot_mapping_distance_angle.gif)
 
-## 3. kinematic _analysis [kinematics_analysis.ipynb](./youBot/kinematics_analysis.ipynb)
+## 3. kinematic analysis [kinematics_analysis.ipynb](./youBot/kinematics_analysis.ipynb)
 - 가정: 정확한 자동차 위치와 목표물의 위치를 알고 있음
 - 목표: 로봇팔을 제어하여 목표물을 pick & place
 - 동작확인:
-![mapping distance and angle](./images/youbot_kinematics_analysis.gif)
+![kinematic analysis](./images/youbot_kinematics_analysis.gif)
+
+## 4. target detection [target_detection.ipynb](./youBot/target_detection.ipynb)
+- 가정: target은 빨강색 큐브
+- 목표: 로봇팔에 달린 카메라의 정보를 이용해 target 검출
+- 동작확인:
+![target detection](./images/youbot_target_detection.gif)
