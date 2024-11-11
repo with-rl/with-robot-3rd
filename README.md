@@ -114,3 +114,4 @@ pip install webcolors
 - 목표: 로봇팔에 달린 카메라의 정보를 이용해 target 검출 후 pick & place
 - 동작확인:
 ![target detection](./images/youbot_pick_and_place.gif)
+![target detection](./images/youbot_find_pick_and_place.gif)
